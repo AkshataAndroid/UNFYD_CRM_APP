@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounglogin">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/unfydcrmlogo" />
+    <EditText
+        android:id="@+id/edituser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/colorAccent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableLeft="@drawable/mdi_account_circle"
+        android:layout_below="@id/logo"/>
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:hint="@string/password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textColorHint="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto_regular"
+        android:drawableLeft="@drawable/mdi_lock"
+        android:layout_below="@id/edituser"/>
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="10dp"
+        android:text="Remember Me"
+        android:fontFamily="@font/roboto_regular"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@id/editpassword"
+        android:buttonTint="@color/colorAccent"
+         />
+
+<!--    <TextView-->
+<!--        android:id="@+id/rememberText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/remember"-->
+<!--        android:layout_below="@id/editpassword"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pink"
+        android:layout_below="@id/checkBox1"
+        android:text="LOGIN"
+
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+
+</RelativeLayout>

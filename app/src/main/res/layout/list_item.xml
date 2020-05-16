@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEFF3"
+    >
+    <TextView
+        android:id="@+id/circularname"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chatimage"
+        android:gravity="center"
+        android:text="RP"
+        android:fontFamily="@font/roboto_regular"
+
+        android:textColor="@color/graycolor"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/commentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Rutu patil"
+        android:fontFamily="@font/roboto_regular"
+
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="an hour ago"
+        android:fontFamily="@font/roboto_regular"
+
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentname"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="okay"
+        android:fontFamily="@font/roboto_regular"
+
+        android:textColor="@color/graycolor" />
+
+
+</RelativeLayout>

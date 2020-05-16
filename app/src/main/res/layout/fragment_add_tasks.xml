@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_addtasks"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+
+            android:background="@color/pink">
+
+            <TextView
+                android:id="@+id/titleadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Add Tasks"
+                android:textColor="@color/white"/>
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/importicon"-->
+<!--                android:layout_width="17dp"-->
+<!--                android:layout_height="17dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:src="@drawable/download" />-->
+
+        </RelativeLayout>
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/toolbar"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:paddingBottom="100dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject"
+                    android:id="@+id/subjecttext"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <EditText
+                    android:id="@+id/addSubject"
+                    android:layout_marginLeft="13dp"
+                    android:layout_below="@id/subjecttext"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"
+                    android:theme="@style/MyEditTextTheme"
+                    android:lines="3"
+                    android:minLines="2"
+                    android:gravity="top|left"
+                    android:maxLines="4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:id="@+id/Descriptiontext"
+                    android:layout_below="@id/addSubject"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <EditText
+                    android:id="@+id/addDescription"
+                    android:layout_marginLeft="13dp"
+                    android:layout_below="@id/Descriptiontext"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"
+                    android:theme="@style/MyEditTextTheme"
+                    android:lines="6"
+                    android:minLines="3"
+                    android:gravity="top|left"
+                    android:maxLines="8"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    />
+                <TextView
+                    android:id="@+id/counttext"
+                    android:layout_below="@id/addDescription"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:text="0/100"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duedate"
+                    android:id="@+id/duedatetext"
+                    android:layout_below="@id/addDescription"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <TextView
+                    android:id="@+id/selectdatetexttwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/duedatetext"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="Select Date"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:id="@+id/calenderimagetwo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_below="@id/duedatetext"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/calendartask"
+                    />
+                <View android:layout_below="@id/selectdatetexttwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/dateview"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/assignto"
+                    android:id="@+id/assigntext"
+                    android:layout_below="@id/selectdatetexttwo"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <Spinner
+                    android:id="@+id/assignspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/assigntext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                   android:background="@drawable/spinnertwo"
+                    android:spinnerMode="dropdown" />
+                <View android:layout_below="@id/assignspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/assignview"
+                    android:background="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priority"
+                    android:id="@+id/prioritytext"
+                    android:layout_below="@id/assignview"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <Spinner
+                    android:id="@+id/priorityspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prioritytext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinnertwo"
+                    android:spinnerMode="dropdown" />
+                <View android:layout_below="@id/priorityspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/priorityview"
+                    android:background="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:id="@+id/typetext"
+                    android:layout_below="@id/priorityspinner"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <Spinner
+                    android:id="@+id/typespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/typetext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinnertwo"
+                    android:spinnerMode="dropdown" />
+                <View android:layout_below="@id/typespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/typeview"
+                    android:background="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:id="@+id/contactstext"
+                    android:layout_below="@id/typeview"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <Spinner
+                    android:id="@+id/contactspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contactstext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinnertwo"
+                    android:spinnerMode="dropdown" />
+                <View android:layout_below="@id/contactspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/contactview"
+                    android:background="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opporunity"
+                    android:id="@+id/opporunitytext"
+                    android:layout_below="@id/contactview"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <Spinner
+                    android:id="@+id/opporspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/opporunitytext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/spinnertwo"
+                    android:spinnerMode="dropdown" />
+                <View android:layout_below="@id/opporspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/oppoview"
+                    android:background="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:id="@+id/statustext"
+                    android:layout_below="@id/oppoview"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/graycolor"/>
+                <Spinner
+                    android:id="@+id/statusspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/statustext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinnertwo"
+                    android:spinnerMode="dropdown" />
+                <View android:layout_below="@id/statusspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/stateviewiew"
+                    android:background="@color/black" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+        <Button
+            android:id="@+id/backbuttontwo"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="0dp"
+            android:text="Back"
+            android:fontFamily="@font/roboto_regular"
+            android:drawableLeft="@drawable/backarrow"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/submitbuttontwo"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/backbuttontwo"
+            android:text="Submit"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+<!--        <TextView-->
+<!--            android:id="@+id/titaleT"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Tasks"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/roboto_regular"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_alignParentLeft="true"/>-->
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/filtericon"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/filtericon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/filter" />
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

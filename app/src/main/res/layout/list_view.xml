@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNFYD BOT"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_regular"
+
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:text="23 Mar"
+            android:fontFamily="@font/roboto_regular"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:textSize="13dp"
+            android:textColor="@color/graycolor" />
+            <ImageView
+                android:id="@+id/emp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/title"
+                android:src="@drawable/employee"/>
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/emp"
+                android:src="@drawable/phone"/>
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/phone"
+                android:src="@drawable/flag"/>
+            <TextView
+                android:id="@+id/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Follow Up"
+                android:textSize="13dp"
+                android:fontFamily="@font/roboto_regular"
+
+                android:layout_below="@id/time"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/graycolor" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akshata G"
+                android:layout_below="@id/time"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="17dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto_regular"
+
+                android:textColor="@color/graycolor" />
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9763639161"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/roboto_regular"
+
+                android:textColor="@color/graycolor" />
+            <TextView
+                android:id="@+id/flagtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer not Intrested"
+                android:textSize="13dp"
+                android:layout_below="@id/number"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/graycolor" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

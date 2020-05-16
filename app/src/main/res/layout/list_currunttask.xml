@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/circular"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/count"
+        android:gravity="center"
+        android:text="2"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/graycolor"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/txtopportunity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/circular"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Current Task"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewOne"
+        android:layout_width="270dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+          android:layout_marginRight="0dp"
+        android:layout_below="@id/txtopportunity"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/titlecurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Test Task"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/timecurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="23 Mar"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:textSize="13dp"
+                android:textColor="@color/graycolor" />
+            <ImageView
+                android:id="@+id/emp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/titlecurrent"
+                android:src="@drawable/employee"/>
+
+
+            <ImageView
+                android:id="@+id/lamp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/emp"
+                android:src="@drawable/lamp"/>
+
+            <TextView
+                android:id="@+id/namecurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akshata G"
+                android:layout_below="@id/timecurrent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginTop="12dp"
+                android:textSize="13dp"
+                android:textColor="@color/graycolor" />
+
+            <TextView
+                android:id="@+id/intrestcurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNFYD BOT"
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_below="@id/namecurrent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/pink" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardviewTwo"-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_below="@id/cardviewOne"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardCornerRadius="10dp">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/title1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="This is Test Task"-->
+<!--                android:textSize="15dp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/time1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:text="23 Mar"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textColor="@color/graycolor" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/emp1"-->
+<!--                android:layout_width="15dp"-->
+<!--                android:layout_height="15dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_below="@id/title1"-->
+<!--                android:src="@drawable/employee"/>-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/lamp1"-->
+<!--                android:layout_width="15dp"-->
+<!--                android:layout_height="15dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_below="@id/emp1"-->
+<!--                android:src="@drawable/lamp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Akshata G"-->
+<!--                android:layout_below="@id/time1"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textColor="@color/graycolor" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/intrest1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="UNFYD BOT"-->
+<!--                android:textSize="12dp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:layout_below="@id/name1"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textColor="@color/pink" />-->
+<!--        </RelativeLayout>-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

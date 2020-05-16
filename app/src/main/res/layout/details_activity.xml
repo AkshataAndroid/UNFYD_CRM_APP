@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.DetailsActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/pink">
+
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/arrow" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/itemlayout"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="Product Development"
+            android:textColor="@color/title"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/prioritybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@color/green"
+            android:text="Medium"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Web Api Application"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/descriptiontitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Description"
+            android:textColor="@color/title"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptiontitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/description"
+            android:layout_marginTop="10dp"
+            android:background="#5B5C5F" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/circular"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img"
+            android:gravity="center"
+            android:text="RP"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="130dp"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/view1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:gravity="center"
+            android:text="17 Feb 2020"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/date"
+            android:layout_marginTop="10dp"
+            android:background="#5B5C5F" />
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/black" />
+
+        <TextView
+            android:id="@+id/started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Not Started"
+            android:textColor="@color/graycolor"
+            android:textSize="13dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/started"
+            android:layout_marginTop="20dp"
+            android:background="#5B5C5F" />
+
+        <ImageView
+            android:id="@+id/attachment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/view3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/clip" />
+
+        <TextView
+            android:id="@+id/attachmenttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Attachment"
+            android:textColor="@color/graycolor" />
+
+        <ImageView
+            android:id="@+id/imageset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:src="@drawable/car" />
+
+        <ImageView
+            android:id="@+id/fileset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:src="@drawable/excel" />
+
+        <ImageView
+            android:id="@+id/pdfset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:src="@drawable/pdf" />
+        </RelativeLayout>
+
+            <ListView
+                android:id="@+id/commentlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemlayout"
+                />
+
+
+        <RelativeLayout
+            android:layout_below="@id/commentlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Add comments"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/enter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/sendbutton" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/opp_container"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink">
+
+        <TextView
+            android:id="@+id/titleop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Opportunity"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/filtericon"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/filtericon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/filter" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/circular"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/count"
+        android:gravity="center"
+        android:text="1"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/graycolor"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/txtopportunity"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/circular"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="30dp"
+        android:text="Opportunity"/>
+    <ListView
+        android:id="@+id/opportunityslist"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtopportunity"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:background="@color/back">
+    </ListView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addopp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="585dp"
+        android:layout_marginRight="25dp"
+        android:foregroundGravity="bottom"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/pink" />
+
+</RelativeLayout>

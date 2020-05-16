@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/contact_container"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+<!--    <include layout="@layout/toolbar"-->
+<!--        android:id="@+id/tool"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/pink">
+        <TextView
+            android:id="@+id/titaleT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_alignParentLeft="true"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/downloadicon"-->
+<!--            android:layout_width="17dp"-->
+<!--            android:layout_height="17dp"-->
+<!--            android:layout_marginRight="13dp"-->
+<!--            android:layout_toLeftOf="@id/searchicon"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:src="@drawable/download" />-->
+
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/filtericon"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/filtericon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/filter" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/contactslist"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:background="@color/back">
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="570dp"
+        android:layout_marginRight="25dp"
+        android:foregroundGravity="bottom"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/pink" />
+
+
+
+    </RelativeLayout>
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/white"-->
+<!--        android:visibility="gone"-->
+<!--        app:itemIconTint="@drawable/tab_color_selector"-->
+<!--        app:itemTextColor="@drawable/tab_color_selector"-->
+<!--        android:fontFamily="@font/roboto_medium"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        app:menu="@menu/bottom_nav_menu" />-->
+
+
+</FrameLayout>

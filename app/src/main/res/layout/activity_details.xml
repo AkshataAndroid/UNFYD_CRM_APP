@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--<ScrollView-->
+<!--    android:layout_height="fill_parent"-->
+<!--    android:layout_width="fill_parent"-->
+
+<!--    android:orientation="vertical"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".DetailsActivity">-->
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/pink">
+
+            <ImageView
+                android:id="@+id/backicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/arrow" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+<!--        <ScrollView-->
+<!--            android:id="@+id/scrollView"-->
+<!--            android:layout_below="@id/toolbar"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:orientation="vertical">-->
+<!--<RelativeLayout-->
+<!--    android:id="@+id/relativelayouttwo"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_below="@id/toolbar">-->
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="22dp"
+            android:text="Product Development"
+            android:textColor="@color/title"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/prioritybutton"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/toolbar"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/green"
+            android:text="Medium"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productname"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:text="Web API application"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/descriptiontitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="13dp"
+            android:text="Add description"
+            android:textColor="@color/title"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptiontitle"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/description"
+            android:layout_marginTop="10dp"
+            android:background="#5B5C5F" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/circular"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/view1"
+            android:layout_toRightOf="@id/profile"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img"
+            android:gravity="center"
+            android:text="RP"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/graycolor"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="130dp"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/view1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:gravity="center"
+            android:text="17 Feb 2020"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/date"
+            android:layout_marginTop="10dp"
+            android:background="#5B5C5F" />
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/view2"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/black" />
+
+        <TextView
+            android:id="@+id/started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_toRightOf="@id/radio"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Not Started"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/graycolor"
+            android:textSize="13dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/started"
+            android:layout_marginTop="20dp"
+            android:background="#5B5C5F" />
+
+        <ImageView
+            android:id="@+id/attachment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/clip" />
+
+        <TextView
+            android:id="@+id/attachmenttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Attachment"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/graycolor" />
+
+        <ImageView
+            android:id="@+id/imageset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:src="@drawable/car" />
+
+        <ImageView
+            android:id="@+id/fileset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:src="@drawable/excel" />
+
+        <ImageView
+            android:id="@+id/pdfset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:src="@drawable/pdf" />
+
+
+
+
+<!--</RelativeLayout>-->
+<!--        </ScrollView>-->
+        <ListView
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_above="@+id/bottomlayout"
+            android:layout_below="@id/pdfset"
+            android:layout_marginTop="10dp"
+            android:stackFromBottom="true"
+
+            />
+        <RelativeLayout
+            android:id="@+id/bottomlayout"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/comments"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Add comments"
+                android:background="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#ADADAD" />
+
+            <ImageView
+                android:id="@+id/enter"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+               android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/sendbutton" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

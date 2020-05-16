@@ -1,0 +1,2 @@
+rootProject.name='UNFYD_CRM_APP'
+include ':app'
